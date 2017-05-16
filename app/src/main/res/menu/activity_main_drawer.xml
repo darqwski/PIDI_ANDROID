@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item android:title="Szukaj po datach"
+            android:id="@+id/dateItem"
+            android:icon="@drawable/calendar" />
+        <item android:title="Szukaj po stronach"
+            android:id="@+id/siteItem"
+            android:icon="@drawable/site" />
+        <item android:title="Szukaj po kategoriach"
+            android:id="@+id/catItem"
+            android:icon="@drawable/category" />
+        <item android:title="Szukaj po filtrach"
+            android:id="@+id/filterItem"
+            android:icon="@drawable/filtr" />
+        <item android:title="Szukaj po tagach"
+            android:id="@+id/tagItem"
+            android:icon="@drawable/tag" />
+        <item android:title="Zapisane Artykuły"
+            android:id="@+id/saveItem"
+            android:icon="@drawable/save" />
+    </group>
+    <group >
+        <item android:title="Stwórz Filtr"
+            android:id="@+id/makerItem"
+            android:icon="@drawable/maker" />
+        <item android:title="Odśwież Baze"
+            android:id="@+id/refreshdatabase"
+            android:icon="@drawable/refresh" />
+        <item android:title="Ustawienia"
+            android:id="@+id/settingsItem"
+            android:icon="@drawable/ic_menu_manage" />
+    </group>
+</menu>

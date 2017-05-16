@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:clickable="false"
+    android:longClickable="false"
+    android:filterTouchesWhenObscured="false"
+    android:id="@+id/ArticleView">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="#DDD" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/imageView"
+        android:background="#EEE" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/SiteImage"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="150dp"
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:background="#FFF"
+        android:textColor="#000" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:id="@+id/categoty"
+        android:textAlignment="textEnd"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_height="30dp"
+        android:textSize="16sp"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:id="@+id/textView4"
+        android:background="#AAA"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/dateview"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:padding="5dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/txtTitle" />
+
+    <ImageView
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:id="@+id/SiteImage"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:id="@+id/SiteLink"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:layout_width="150dp"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:layout_alignBaseline="@+id/ArticleSaveButton"
+        android:layout_alignBottom="@+id/ArticleSaveButton"
+        android:layout_toEndOf="@+id/SiteImage" />
+
+    <TextView
+        android:text="Zapisz do notatnika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/ArticleSaveButton"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/SiteLink"
+        android:layout_above="@+id/txtTitle"
+        android:padding="5dp"
+        android:textSize="14sp" />
+
+</RelativeLayout>
